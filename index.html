@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBAL-OVISTA</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.web-container{
+    width: 100%;
+    height: auto;
+}
+
+/* ........nav-bar............ */
+
+.nav-banner-container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ovista-images/banner-bg2.jpg);;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    /* background-color: blueviolet; */
+}
+
+/* ........................... */
+
+.nav-container{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+.nav-container .nav-logo{
+    width: 250px;
+    height: 250px;
+}
+.nav-container .menu-icon{
+    width: 50px;
+    height: 40px;
+    margin-right: 5%;
+}
+/* ...........banner............ */
+
+.banner-container{
+    width: 100%;
+    height: 83.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:8% ;
+    padding-left: 6%;
+    color: white;
+    /* background-color: blue; */
+}
+.banner-container h1{
+    font-size: 75px;
+    font-family: cursive;
+}
+.banner-container p{
+    font-size: 28px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.banner-container button{
+    width: 15%;
+    height: 10%;
+    font-size: larger;
+    background-color: rgb(240,73, 35);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(to left, rgb(240,73,35) 50%, rgb(244,123,32) 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+}
+.banner-container button:hover{
+    background-color: rgb(244,123,32);
+    background-position:left
+}
+/* .............activity............ */
+
+.activity-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:whitesmoke;
+}
+.activity-title{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.activity-title h2{
+    font-size: 48px;
+    font-family: cursive;
+}
+.activity-title p{
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(244,123,32);
+}
+.activities-container{
+    width: 90%;
+    height: 70%;
+    /* background-color: brown; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 1%;
+    grid-template-columns: repeat(4, 1fr);
+}
+.activity-card{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(240,73, 35);
+    border-radius: 5px;
+    color: white;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ..........fav-places........ */
+
+.Packages-container{
+    width: 100%;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+.package-title{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+}
+.package-title p{
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    color: rgb(244,123,32);
+}
+.package-title h2{
+    font-size: 48px;
+    font-family: cursive;
+}
+.packagecard-container {
+    width: 80%;
+    height: 80%;
+    /* background-color: bisque; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 6%;
+}
+
+.Package-card{
+    width: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.Package-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.Package-card-content {
+    padding: 15px;
+}
+.card-title {
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card-price {
+    display: flex;
+    gap: 5%;
+    margin-top: 5%;
+}
+.card-price p{
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: rgb(240,73, 35);
+}
+.card-price span{
+    font-size: larger;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+</style>
+<body>
+    <div class="web-container">
+
+        <!-- nav-bar -->
+    
+       <div class="nav-banner-container">
+        <div class="nav-container">
+          <img class="nav-logo" src="Ovista-images/globalovsta-logo-png.png" alt="">
+          <img class="menu-icon" src="Ovista-images/icons8-menu-50.png" alt="">
+          </div>
+    
+        <!-- banner -->
+    
+        <div class="banner-container">
+            <h1>Find your next Trip!</h1>
+            <p>Discover,Explore and create unforgettable memories.</p>
+            <button>Discover Now</button>
+        </div>
+        </div>
+    
+        <!-- Activities -->
+        <div class="activity-section">
+            <div class="activity-title">
+                <p>WHAT WE DO</p>
+                <h2>Our Activities</h2>
+            </div>
+                <div class="activities-container">
+                    <div class="activity-card">
+                        <img src="Ovista-images/activitycard-1.png" alt="">
+                        <div class="activity-text">Lorem Ipsum</div>
+                    </div>
+                    <div class="activity-card">
+                         <img src="Ovista-images/activitycard-2.png" alt="">
+                        <div class="activity-text">Lorem Ipsum</div>
+                    </div>
+                    <div class="activity-card">
+                        <img src="Ovista-images/activitycard-3.png">
+                        <div class="activity-text">Lorem Ipsum</div>
+                    </div>
+                    <div class="activity-card">
+                         <img src="Ovista-images/activitycard-4.png" alt="">
+                        <div class="activity-text">Lorem Ipsum</div>
+                    </div>
+                </div>
+        </div>
+        <!-- packages -->
+        <div class="Packages-container">
+            <div class="package-title">
+                <p>Discover Your Packages</p>
+                 <h2>Favourite Places</h2>
+            </div>
+           
+            <div class="packagecard-container">
+                <!-- Card 1 -->
+                <div class="Package-card">
+                    <img src="Ovista-images/safari.jpeg" alt="Desert Safari">
+                    <div class="Package-card-content">
+                        <div class="card-title">Desert Safari</div>
+                        <div class="card-price">
+                            <p>AED 750</p>
+                            <span>Per person</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="Package-card">
+                    <img src="Ovista-images/abu dhabi.jpeg" alt="Abu Dhabi Tour">
+                    <div class="Package-card-content">
+                        <div class="card-title">Abu Dhabi Tour</div>
+                        <div class="card-price">
+                            <p>AED 750</p>
+                            <span>Per person</span>
+                    </div>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="Package-card">
+                    <img src="Ovista-images/al ain.jpg" alt="Al Ain Tour">
+                    <div class="Package-card-content">
+                        <div class="card-title">Al Ain Tour</div>
+                        <div class="card-price">
+                            <p>AED 750</p>
+                            <span>Per person</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="Package-card">
+                    <img src="Ovista-images/dubai-city.jpeg" alt="Dubai City Tour">
+                    <div class="Package-card-content">
+                        <div class="card-title">Dubai City Tour</div>
+                        <div class="card-price">
+                            <p>AED 750</p>
+                            <span>Per person</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="Package-card">
+                    <img src="Ovista-images/dubai-full.jpeg" alt="Dubai Full Day Tour">
+                    <div class="Package-card-content">
+                        <div class="card-title">Dubai Full Day Tour</div>
+                        <div class="card-price">
+                            <p>AED 750</p>
+                            <span>Per person</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 6 -->
+                <div class="Package-card">
+                    <img src="Ovista-images/abu-boat.jpeg" alt="Abu Dhabi Tour">
+                    <div class="Package-card-content">
+                        <div class="card-title">Abu Dhabi Tour</div>
+                        <div class="card-price">
+                        <p>AED 750</p>
+                        <span>Per person</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
