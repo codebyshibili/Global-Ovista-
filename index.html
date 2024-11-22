@@ -21,7 +21,7 @@
 .nav-banner-container{
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ovista-images/banner-bg2.jpg);;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ovista-images/banner-bg2.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     /* background-color: blueviolet; */
@@ -136,6 +136,7 @@
     box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
 }
 
+
 /* ..........fav-places........ */
 
 .Packages-container{
@@ -221,6 +222,315 @@
     font-family: sans-serif;
     font-weight: bold;
 }
+
+/* ..........banner2................ */
+
+.banner2-container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: bisque; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(Ovista-images/banner2.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.banner2-container p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-weight: bold; */
+}
+.banner2-container h2{
+    text-align: center;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ..............about......................*/
+
+.about-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* background-color: aqua; */
+}
+.aboutimage-section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: bisque;  */
+}
+.aboutimage-section img{
+    width: 550px;
+    height: 650px;
+    border-radius: 10px;
+}
+.aboutcont-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #fff; */
+  }
+  
+  .about-content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: bisque; */
+    gap: 2%;
+    padding-left: 5%;
+  }
+  
+  .about-content h5{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;    
+    font-family: sans-serif;
+    font-weight: bolder;
+  }
+  
+  .about-content h2 {
+    font-family: sans-serif;
+    font-size: 36px;
+  }
+  
+  .about-content .highlight {
+    color: #ff6600; /* Orange highlight */
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: sans-serif;
+    color: #666;
+  }
+  
+  .features-list {
+    width: 250px;
+    height: 200px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: aqua; */
+  }
+  
+  .features-list li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #5e5a5a;
+
+ }
+  
+  .about-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-family: sans-serif;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(240,73, 35);
+    margin-top: 2%;
+    background: linear-gradient(to left, white 50%, rgb(244,123,32) 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+  }
+  .about-btn:hover{
+    background-color: rgb(244,123,32);
+    background-position:left;
+    color: white;
+    border: none;
+  }
+ 
+  /* ..............blog..................... */
+
+.blog-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5%;
+    background-color: whitesmoke;
+}
+.blog-title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    /* background-color: beige; */
+}
+.blog-title p{
+    color: rgb(244,123,32);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.blog-title h2{
+    font-size: 48px;
+    font-family: cursive;
+}
+.blogcard-container{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+.blog{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+.blog-date{
+    width: 10%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(244,123,32);
+}
+.blog-date h4{
+    font-size: 28px;
+    font-family: sans-serif;
+}
+.blog-date p{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.blog-content{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bolder;
+    /* background-color: aqua;   */
+}
+.blog-img-btn{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+}
+.blog-img-btn img{
+    width: 100px;
+    margin-top: 8%;
+}
+.blog-img-btn button{
+    width:100%;
+    height: 30%;
+    color: white;
+    border: none;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(244,123,32);
+    background: linear-gradient(to left,rgb(244,123,32)  50%, rgb(240,73,35) 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+}
+.blog-img-btn button:hover{
+    background-color: rgb(244,123,32);
+    background-position:left;
+}
+
+/* ................footer........................ */
+.footer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .footercont-container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+  }
+  .footercont-section{
+     width: 30%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     /* background-color: bisque; */
+  }
+  .footercont-section img{
+    width:400px;
+    /* background-color: aqua; */
+  }
+   .footer-section{
+    width: 20%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: beige; */
+    gap: 5%;
+   }
+   .footer-section li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:5%;
+    color:rgb(240,73, 35);
+     
+   }
+   .footer-section h3{
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+   }
+   .footer-section a{
+    text-decoration: none;
+    font-size:18px ;
+    color: rgb(240,73,35);
+   }
+  
+  .footer-bottom {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color:white;
+    background-color:rgb(240,73, 35);
+  }
 
 
 
@@ -351,7 +661,121 @@
                 </div>
             </div>
         </div>
-    </div>
+        <!-- banner2 -->
+         <div class="banner2-container">
+            <p>LOVE WHERE YOU'RE GOING IN THE PERFECT TIME</p>
+            <h2>EXPERIENCE DUBAI WITH OUR <br>AFFORDABLE PACKAGES</h2>
+         </div>
+        
+        <!-- about -->
+         <div class="about-container">
+            <div class="aboutimage-section">
+                <img src="Ovista-images/Dubai ▪️United Arab Emirates.jpeg" alt="">
+            </div>
+            <section class="aboutcont-section">
+                <div class="about-content">
+                  <h5>ABOUT OUR COMPANY</h5>
+                  <h2>We Are <span class="highlight">Govista</span></h2>
+                  <h2>Your Travel Partner in UAE</h2>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br>
+                     enim ad minim veniam, quis nostrud.
+                  </p>
+                  <ul class="features-list">
+                    <li><img src="Ovista-images/icons8-approval-26.png" alt=""> Lorem ipsum dolor sit amet</li>
+                    <li><img src="Ovista-images/icons8-approval-26.png" alt=""> Consectetur adipiscing sed do</li>
+                    <li><img src="Ovista-images/icons8-approval-26.png" alt="">Eiusmod tempor incididunt</li>
+                    <li><img src="Ovista-images/icons8-approval-26.png" alt=""> Ad minim veniam, quis nostrud</li>
+                  </ul>
+                  <button class="about-btn">About Us</button>
+                </div>
+              </section>
+         </div>
+    
+         <!-- blog -->
+        <div class="blog-container">
+             <div class="blog-title">
+                <p>OUR RECENT NEWS</p>
+                <h2>Tourist Blog</h2>
+             </div>
+    
+            <div class="blogcard-container">
+                <div class="blog">
+                 <div class="blog-date">
+                    <h4>24</h4>
+                    <p>Now</p>
+                 </div>
+                 <div class="blog-content">
+                    <h3>Behind the Scenes: How We Plan Your Trips</h3>
+                 </div>
+                 <div class="blog-img-btn">
+                    <img src="Ovista-images/icons8-traveler-100.png" alt="">
+                    <button>Read More</button>
+                 </div>
+                </div>
+    
+                <div class="blog">
+                 <div class="blog-date">
+                    <h4>24</h4>
+                    <p>Now</p>
+                 </div>
+                 <div class="blog-content">
+                    <h3>Tips For Taking A Long-Term Trip With Kids</h3>
+                 </div>
+                 <div class="blog-img-btn">
+                    <img src="Ovista-images/icons8-father-100.png" alt="">
+                     <button>Read More</button>
+                 </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- foooter -->
+        <footer class="footer">
+            <div class="footercont-container">
+    
+              <div class="footercont-section">
+                <img src="Ovista-images/globalovsta-logo-png.png" alt="">
+              </div>
+    
+              <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Our Tours</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+    
+              <div class="footer-section">
+                <h3>Follow us on</h3>
+                <ul>
+                    <li><img src="Ovista-images/icons8-facebook-32 (1).png" alt="">Facebook</li>
+                    <li><img src="Ovista-images/icons8-instagram-logo-32.png" alt="">Instagram</li>
+                    <li><img src="Ovista-images/icons8-whatsapp-32.png" alt="">Whatsapp</li>
+                  </ul>
+              </div>
+    
+              <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><img src="Ovista-images/icons8-phone-32.png" alt="">9836589214</li>
+                    <li><img src="Ovista-images/icons8-mail-32.png" alt="">ovista@gmail.com</li>
+                    <li><img src="Ovista-images/icons8-location-32.png" alt="">UAE,Dubai</li>
+            
+                  </ul>
+              </div>
+    
+            </div>
+            <div class="footer-bottom">
+              <p>Copyright ©2024 All rights reserved | Designed by HJ Designs</p>
+            </div>
+          </footer>
+          
+    
+    </div> 
     
 </body>
 </html>
