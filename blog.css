@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.web-container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+/* ........nav-bar............ */
+
+.nav-banner-container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ovista-images/banner-bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    /* background-color: blueviolet; */
+}
+
+/* ........................... */
+
+.navbar-container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+}
+.navlogo-section{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+.navlogo-section img{
+    width: 300px;
+    height: 300px;
+}
+
+.navbar-container label {
+    display: none;
+
+}
+#checking{
+    display: none;
+}
+.navbar-container label {
+    display: none;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.nav-items {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-items a{
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.nav-items a:hover{
+    color: rgb(239,73,35);
+}
+/* ...........banner............ */
+
+.banner-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:8% ;
+    padding-left: 6%;
+    color: white;
+    /* background-color: blue; */
+}
+.banner-container h1{
+    font-size: 75px;
+    font-family: cursive;
+}
+.banner-container p{
+    font-size: 28px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.banner-container button{
+    width: 15%;
+    height: 10%;
+    font-size: larger;
+    background-color: rgb(240,73, 35);
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background: linear-gradient(to left, rgb(240,73,35) 50%, rgb(244,123,32) 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+}
+.banner-container button:hover{
+    background-color: rgb(244,123,32);
+    background-position:left
+}
+
+/* ...........blog............. */
+.blogpage-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blogpage-title{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: cursive;
+    align-items: center;
+    padding-left: 6%;
+    /* background-color: azure; */
+}
+.blog-container{
+    width: 85%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(145, 145, 43); */
+}
+.blog{
+    width: 30%;
+    height: 100%;
+    /* background-color: azure; */
+ 
+}
+.blog img{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.blog-cont{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding-left: 2%;
+    padding-top: 5%;
+}
+
+.blog span{
+ color: grey;
+ font-family: sans-serif;
+
+}
+.blog h5{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.blog p{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: gray;
+}
+
+
+
+/* ................footer........................ */
+.footer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .footercont-container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+  }
+  .footercont-section{
+     width: 30%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     /* background-color: bisque; */
+  }
+  .footercont-section img{
+    width:400px;
+    /* background-color: aqua; */
+  }
+   .footer-section{
+    width: 20%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: beige; */
+    gap: 5%;
+   }
+   .footer-section li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:5%;
+    color:rgb(240,73, 35);
+     
+   }
+   .footer-section h3{
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+   }
+   .footer-section a{
+    text-decoration: none;
+    font-size:18px ;
+    color: rgb(240,73,35);
+   }
+  
+  .footer-bottom {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color:white;
+    background-color:rgb(240,73, 35);
+  }
